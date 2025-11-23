@@ -1,38 +1,68 @@
-# FM-radio-receiver-with-digital-tuning
-Task: Build an FM receiver using a tuner module (e.g., Si4703). Include a display to show frequency and simple buttons for tuning. Consider an RDS (Radio Data System).
+# 📻 ESP32 Smart FM Receiver (MicroPython)
 
-This project implements a digital FM radio receiver using MicroPython and a Si4703 tuner module.
+![Language](https://img.shields.io/badge/language-MicroPython-blue)
+![Hardware](https://img.shields.io/badge/Hardware-ESP32%20%7C%20Si4703%20%7C%20OLED-orange)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
 
-The system allows users to tune radio frequencies digitally, using buttons to increase or decrease the current frequency. A display (e.g., OLED or LCD) shows the current station frequency in real time.
+> **Project Goal:** Design and implement a digital FM radio receiver with a graphical user interface, utilizing the Si4703 tuner's advanced capabilities (RDS) and the ESP32's processing power.
 
-The project includes RDS (Radio Data System) functionality to display additional broadcast information such as station name, radio text, etc.
+## 📖 Overview
+This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM tuner module**, and a **1.3" SH1106-based OLED display**. The system is developed in **MicroPython** and follows a structured hardware–software integration approach, prioritizing modularity and ease of use.
 
---> Features:
+### Key Capabilities
+* **Digital Tuning:** Precise frequency control (87.5 - 108.0 MHz).
+* **Visual Feedback:** Real-time display of frequency, RSSI (Signal Strength), and Volume.
+* **User Interface:** Rotary encoder control (Tune/Volume) and OLED visualization.
+* **Architecture:** Shared I²C bus implementation for optimized pin usage.
 
-Digital FM tuning with up/down buttons
+---
 
-Frequency display on an OLED/LCD screen
+## 🛠 Hardware Specifications
 
-RDS support (station name, text info)
+| Component | Model/Type | Description |
+| :--- | :--- | :--- |
+| **MCU** | ESP32 DevKit V1 | Main controller running MicroPython firmware. |
+| **Tuner** | Si4703 Breakout | FM Tuner with RDS support and digital volume control. |
+| **Display** | 1.3" OLED (I²C) | 128x64 pixel resolution, **SH1106** controller. |
+| **Input** | Rotary Encoder | KY-040 (or similar) for menu navigation and tuning. |
 
-Configurable frequency range 
+### 🔌 Pinout & Wiring Strategy
+*Preliminary mapping (to be updated as hardware is assembled)*
 
-Simple and lightweight MicroPython implementation
+| ESP32 Pin | Component | Function |
+| :--- | :--- | :--- |
+| GPIO 21 | Si4703 & OLED | **SDA** (I2C Data) |
+| GPIO 22 | Si4703 & OLED | **SCL** (I2C Clock) |
+| GPIO X | Si4703 | RST (Reset) |
+| GPIO Y | Rotary Encoder | CLK |
+| GPIO Z | Rotary Encoder | DT |
 
---> Hardware Requirements
+---
 
-Microcontroller compatible with MicroPython (e.g., ESP32 / Raspberry Pi Pico)
+## 🗺️ Project Roadmap & Progress
+*This section tracks the weekly development goals.*
 
-Si4703 FM tuner module
+### Phase 1: Foundation (Weeks 1-2)
+- [x] Project setup & Repository initialization.
+- [ ] Flash MicroPython firmware onto ESP32.
+- [ ] Validate I2C connection (I2C Scan) for OLED and Si4703.
+- [ ] Basic "Hello World" on SH1106 OLED.
 
-OLED/LCD display (I²C or SPI interface)
+### Phase 2: Core Radio Drivers (Weeks 3-4)
+- [ ] Port/Write Si4703 MicroPython driver.
+- [ ] Implement basic register writing (Power Up, Volume).
+- [ ] Implement `seek()` and `tune()` functions.
 
-Push buttons for tuning control
+### Phase 3: Integration & UI (Weeks 5-6)
+- [ ] Design UI Layout (Frequency in center, Status bar on top).
+- [ ] Integrate Rotary Encoder interrupts.
+- [ ] **Milestone:** Working radio with sound and frequency display.
 
-Optional: speaker or headphone output
+### Phase 4: Advanced Features (Final)
+- [ ] Read and decode RDS (Station Name).
+- [ ] Save favorite stations to ESP32 non-volatile memory (`.json`).
+- [ ] Case design / Final assembly.
 
---> Software
+---
 
-Written in MicroPython, using Thonny
-
-Easily adaptable for other tuner modules or displays
+## 📂 Project Structure
