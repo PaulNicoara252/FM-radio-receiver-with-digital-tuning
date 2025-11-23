@@ -42,23 +42,23 @@ This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM
 ## 🗺️ Project Roadmap & Progress
 *This section tracks the weekly development goals.*
 
-### Phase 1: Foundation (Weeks 1-2)
+### Phase 1: Foundation 
 - [x] Project setup & Repository initialization.
 - [ ] Flash MicroPython firmware onto ESP32.
 - [ ] Validate I2C connection (I2C Scan) for OLED and Si4703.
 - [ ] Basic "Hello World" on SH1106 OLED.
 
-### Phase 2: Core Radio Drivers (Weeks 3-4)
+### Phase 2: Core Radio Drivers
 - [ ] Port/Write Si4703 MicroPython driver.
 - [ ] Implement basic register writing (Power Up, Volume).
 - [ ] Implement `seek()` and `tune()` functions.
 
-### Phase 3: Integration & UI (Weeks 5-6)
+### Phase 3: Integration & UI
 - [ ] Design UI Layout (Frequency in center, Status bar on top).
 - [ ] Integrate Rotary Encoder interrupts.
 - [ ] **Milestone:** Working radio with sound and frequency display.
 
-### Phase 4: Advanced Features (Final)
+### Phase 4: Advanced Features
 - [ ] Read and decode RDS (Station Name).
 - [ ] Save favorite stations to ESP32 non-volatile memory (`.json`).
 - [ ] Case design / Final assembly.
