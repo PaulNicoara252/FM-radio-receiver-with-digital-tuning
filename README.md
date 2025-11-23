@@ -1,3 +1,6 @@
+<img width="643" height="432" alt="image" src="https://github.com/user-attachments/assets/3be7d62e-9f36-4a6e-8f5a-75862548479f" />
+
+
 # 📻 ESP32 Smart FM Receiver (MicroPython)
 
 ![Language](https://img.shields.io/badge/language-MicroPython-blue)
