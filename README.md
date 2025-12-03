@@ -135,14 +135,20 @@ This section presents the visual representation of the project, showcasing the p
 ### 1. Physical Build
 The images below highlight the wiring complexity and the integration of the ESP32, Si4703, and OLED display on the breadboard.
 
-| Wiring Detail (Top View) | System Setup (Side View) |
-| :---: | :---: |
-| <img src="./docs/CircuitTopView.png" width="400" alt="Wiring Detail"> | <img src="./docs/CircuitSideView.png" width="400" alt="System Setup"> |
+<div align="center">
+  <img src="./docs/CircuitTopView.png" width="700" alt="Wiring Detail Top View">
+  <br>
+  <i> Top view showing wiring connections</i>
+  <br><br>
+  <img src="./docs/CircuitSideView.png" width="700" alt="System Setup Side View">
+  <br>
+  <i> Side view of the complete setup</i>
+</div>
 
 ### 2. Video Demonstration
-Click the link below to watch the system in action, demonstrating frequency tuning, volume control, and RDS scrolling directly from the repository.
+Watch the system in action (tuning, volume, and RDS) directly below.
 
-### 🎬 [Click here to watch the Demo Video](./docs/FM_Radio_Receiver_Video.mp4)
+https://github.com/user-attachments/assets/2bfd630c-2b35-4ec9-9f3d-a8fa236a6961
 
 ### 3. Circuit Schematic
 The detailed schematic below represents the electrical connections and logic levels used in the project simulation (LTspice) and final assembly.
@@ -150,3 +156,7 @@ The detailed schematic below represents the electrical connections and logic lev
 <div align="center">
   <img src="./docs/schematic.png" width="800" alt="LTspice Schematic">
 </div>
+
+
+
+
