@@ -1,0 +1,11 @@
+digraph "si4703_driver.Si4703.get_frequency"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="si4703_driver.Si4703.get\l_frequency",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="si4703_driver.Si4703.seek",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classsi4703__driver_1_1_si4703.html#aa88f3328a33d1ab4f953657d55a5f95d",tooltip=" "];
+}

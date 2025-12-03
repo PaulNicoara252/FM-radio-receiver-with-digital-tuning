@@ -51,7 +51,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"si4703__driver_8py.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

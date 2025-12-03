@@ -28,7 +28,38 @@ This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM
 | **Tuner** | Si4703 Breakout | FM Tuner with RDS support and digital volume control. |
 | **Display** | 1.3" OLED (I²C) | 128x64 pixel resolution, **SH1106** controller. |
 | **Input** | Rotary Encoder | KY-040 (or similar) for menu navigation and tuning. |
+<img width="643" height="432" alt="image" src="https://github.com/user-attachments/assets/3be7d62e-9f36-4a6e-8f5a-75862548479f" />
 
+# 📻 ESP32 Smart FM Receiver (MicroPython)
+
+![Language](https://img.shields.io/badge/language-MicroPython-blue)
+![Hardware](https://img.shields.io/badge/Hardware-ESP32%20%7C%20Si4703%20%7C%20OLED-orange)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+
+> **Project Goal:** Design and implement a digital FM radio receiver with a graphical user interface, utilizing the Si4703 tuner's advanced capabilities (RDS) and the ESP32's processing power.
+
+---
+
+<details>
+<summary><b>📐 Click to view Logic Flowchart</b></summary>
+<br>
+
+![Project Flowchart](flowchart.svg)
+
+</details>
+
+<details>
+<summary><b>📂 Click to view Project File Structure</b></summary>
+<br>
+
+```text
+.
+├── main-app.py               # Main Entry Point: UI Logic, Hardware Init, and Event Loop
+├── si4703_driver.py          # Driver: Control for Si4703 FM Tuner (I2C)
+├── ssd1306_driver.py         # Driver: Control for OLED Display (SPI/I2C)
+├── rotary_encoder_driver.py  # Driver: Handling Rotary Encoder interrupts and debouncing
+├── flowchart.svg             # Visual logic diagram
+└── README.md                 # Project Documentation
 ### 🔌 Pinout & Wiring Strategy
 *Preliminary mapping (to be updated as hardware is assembled)*
 
