@@ -83,3 +83,72 @@ The block diagram below illustrates the high-level data flow and control logic. 
 </div>
 
 <br>
+
+
+
+## 💻 IV. SOFTWARE
+
+This section details the software architecture of the project. The code is designed with a modular approach, where dedicated drivers handle hardware peripherals (Radio, Display, Input), while a central application loop coordinates logic, UI updates, and data processing in real-time.
+
+<details>
+<summary><h3>📐 File Structure </h3></summary>
+<br>
+
+![Project Filestructure](./docs/filestructure.svg)
+
+</details>
+
+### 📂 Code Breakdown
+
+#### 1. Main Application (`main-app.py`)
+The entry point of the system. It acts as the central orchestrator, initializing all peripherals and managing the event loop.
+* **System Initialization:** Sets up the **SPI bus** for the OLED and **I2C bus** for the Si4703 radio.
+* **Event Loop (`run`):** Executes a non-blocking `while True` loop that constantly checks for user input and RDS data without halting execution.
+* **State Machine:** Manages the active control mode (switching between `FREQ` and `VOL` when the button is pressed).
+* **UI Rendering (`draw_interface`):** Handles the logic for drawing signal bars, formatting frequency strings, and calculating the scrolling position for long RDS text.
+
+#### 2. FM Radio Driver (`si4703_driver.py`)
+A comprehensive driver that interacts directly with the Si4703 registers via I2C.
+* **Register Management:** Handles the complex initialization sequence: Hardware Reset → Oscillator Enable → Power Up → RDS Enable.
+* **RDS Decoding (`process_rds`):** Implements a bit-banging approach to decode **Group 0A** (Station Name) and **Group 2A** (Radio Text) packets directly from the register data.
+* **Tuning Logic:** Converts human-readable frequency (e.g., 101.5 MHz) into the specific 10-bit channel value required by the chip.
+* **Signal Telemetry:** Provides methods to read RSSI (Received Signal Strength Indicator) and Stereo/Mono status.
+
+#### 3. Input Driver (`rotary_encoder_driver.py`)
+Handles physical user interaction through the rotary encoder using hardware interrupts for precision.
+* **Interrupt Handling (`IRQ`):** Uses `Pin.IRQ_FALLING` on the CLK pin to detect rotation immediately, ensuring no steps are missed during fast turning.
+* **Debouncing:** Implements a software debounce timer (`50ms`) to filter out mechanical noise and switch bounce, preventing erratic value jumps.
+* **Directional Logic:** Determines clockwise or counter-clockwise rotation by comparing the state of the **DT pin** relative to the **CLK pin**.
+
+#### 4. Display Driver (`ssd1306_driver.py`)
+A standard MicroPython driver adapted for high-speed SPI communication with the OLED.
+* **Framebuffer Integration:** Inherits from `framebuf.FrameBuffer`, allowing the use of efficient graphics primitives (lines, rectangles, text).
+* **SPI Protocol:** Manages the low-level transmission of command bytes and data bytes using the `DC` (Data/Command), `CS` (Chip Select), and `RES` (Reset) pins.
+* **Buffer Management:** Maintains a local bytearray buffer of the screen content and pushes it to the display only when `show()` is called, optimizing performance.
+
+
+
+## 📷 V. Project Demo
+
+This section presents the visual representation of the project, showcasing the physical circuit assembly and the system in operation. Below you will find detailed photos of the breadboard connections, a video demonstration of the functionality, and the electrical schematic.
+
+### 1. Physical Build
+Here is the actual implementation of the receiver. The images highlight the wiring complexity and the integration of the ESP32, Si4703, and OLED display on the breadboard.
+
+| Wiring Detail (Top View) | System Setup (Side View) |
+| :---: | :---: |
+| <img src="./docs/WhatsApp Image 2025-12-03 at 23.47.26_c45a749a.jpg" width="400" alt="Wiring Detail"> | <img src="./docs/WhatsApp Image 2025-12-03 at 23.46.36_de1e6bef.jpg" width="400" alt="System Setup"> |
+
+### 2. Video Demonstration
+Watch the system in action, including frequency tuning, volume control, and RDS scrolling.
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+
+*(Click the image above to watch the video on YouTube)*
+
+### 3. Circuit Schematic
+The detailed schematic below represents the electrical connections and logic levels used in the project simulation (LTspice) and final assembly.
+
+<div align="center">
+  <img src="./docs/schematic.png" width="800" alt="LTspice Schematic">
+</div>
