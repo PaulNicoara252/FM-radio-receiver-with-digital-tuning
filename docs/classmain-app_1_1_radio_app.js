@@ -2,6 +2,7 @@ var classmain_app_1_1_radio_app =
 [
     [ "__init__", "classmain-app_1_1_radio_app.html#a21bdf84cc9f511e4fc7f1d05188b3c32", null ],
     [ "run", "classmain-app_1_1_radio_app.html#a83523ebdaad25499dc346697c0ac25f2", null ],
+    [ "stop", "classmain-app_1_1_radio_app.html#a058e1b453b247b572e5cdfe50d1ac4fb", null ],
     [ "btn", "classmain-app_1_1_radio_app.html#a7392f4d075cde4a8a2ea65b69fba4d7d", null ],
     [ "current_freq", "classmain-app_1_1_radio_app.html#a6069675cd51ff409a556d2c33d7ff081", null ],
     [ "encoder", "classmain-app_1_1_radio_app.html#abf70f13d646f143760cd3985cc855f77", null ],

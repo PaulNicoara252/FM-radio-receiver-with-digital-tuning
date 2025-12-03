@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['main_2dapp_0',['main-app',['../namespacemain-app.html',1,'']]],
-  ['main_2dapp_2epy_1',['main-app.py',['../main-app_8py.html',1,'']]],
-  ['max_5fval_2',['max_val',['../classrotary__encoder__driver_1_1_rotary_encoder.html#aec18aae68dbff798e32f6bd1db959f5b',1,'rotary_encoder_driver::RotaryEncoder']]],
-  ['min_5fval_3',['min_val',['../classrotary__encoder__driver_1_1_rotary_encoder.html#a7f982545d956ffd18e5277ab5cd737d0',1,'rotary_encoder_driver::RotaryEncoder']]],
-  ['mode_4',['mode',['../classmain-app_1_1_radio_app.html#ac3509e3c15d7f1ca7c1738b67f6f735e',1,'main-app::RadioApp']]],
-  ['mute_5',['mute',['../classsi4703__driver_1_1_si4703.html#a3402c32fa1db1adbdc5a98358dbe7253',1,'si4703_driver::Si4703']]]
+  ['fm_20radio_20driver_20si4703_5fdriver_20py_0',['2. FM Radio Driver (&lt;span class=&quot;tt&quot;&gt;si4703_driver.py&lt;/span&gt;)',['../dir_97dc248f304fb1dac9681c18cfb7f2a8.html#autotoc_md13',1,'']]],
+  ['fm_20radio_20receiver_20esp32_20micropython_1',['📻 FM Radio Receiver - ESP32(MicroPython)',['../dir_97dc248f304fb1dac9681c18cfb7f2a8.html#autotoc_md0',1,'']]],
+  ['fm_20tuning_20reception_2',['1. FM Tuning &amp;amp; Reception',['../dir_97dc248f304fb1dac9681c18cfb7f2a8.html#autotoc_md3',1,'']]],
+  ['frameworks_3',['🛠️ Tools &amp;amp; Frameworks',['../dir_97dc248f304fb1dac9681c18cfb7f2a8.html#autotoc_md23',1,'']]],
+  ['freq_5fint_4',['freq_int',['../classmain-app_1_1_radio_app.html#a45eb5814265a726a95954326c679d4f7',1,'main-app::RadioApp']]],
+  ['functions_5',['⚙️ II. Functions',['../dir_97dc248f304fb1dac9681c18cfb7f2a8.html#autotoc_md2',1,'']]]
 ];

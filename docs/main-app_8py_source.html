@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fm radio receiver: C:/Users/Csabi/OneDrive/Asztali gép/de2-project-current/main-app.py Source File</title>
+<title>Fm radio receiver: C:/Users/Csabi/OneDrive/Asztali gép/FM-radio-receiver-with-digital-tuning/main-app.py Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="icons8-radio-96.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Fm radio receiver<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Fm radio receiver<span id="projectnumber">&#160;1.1</span>
    </div>
   </td>
  </tr>
@@ -335,17 +335,17 @@ $(function(){initNavTree('main-app_8py_source.html','',''); });
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>            time.sleep_ms(10)</div>
 </div>
-</div>
 <div class="foldopen" id="foldopen00237" data-start="" data-end="">
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="namespacemain-app.html#a36110fc1602a9c1f35b192ae728f5dc2">  237</a></span><span class="keyword">def </span><a class="code hl_function" href="namespacemain-app.html#a36110fc1602a9c1f35b192ae728f5dc2">stop</a>(self):</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    self.oled.fill(0)</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    self.oled.text(<span class="stringliteral">&quot;Powering off...&quot;</span>, 20, 30)</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    self.oled.show()</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    time.sleep(1)</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    self.oled.poweroff()</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    self.radio.mute(<span class="keyword">True</span>)</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    self.radio.shutdown()</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classmain-app_1_1_radio_app.html#a058e1b453b247b572e5cdfe50d1ac4fb">  237</a></span>    <span class="keyword">def </span><a class="code hl_function" href="classmain-app_1_1_radio_app.html#a058e1b453b247b572e5cdfe50d1ac4fb">stop</a>(self):</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#aac865ba10f577ce3183b30f548dd8cbb">oled</a>.fill(0)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#aac865ba10f577ce3183b30f548dd8cbb">oled</a>.text(<span class="stringliteral">&quot;Powering off...&quot;</span>, 20, 30)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#aac865ba10f577ce3183b30f548dd8cbb">oled</a>.show()</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        time.sleep(1)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#aac865ba10f577ce3183b30f548dd8cbb">oled</a>.poweroff()</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#a074fa5e5e28868099e3ccdfee654fdb7">radio</a>.mute(<span class="keyword">True</span>)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        self.<a class="code hl_variable" href="classmain-app_1_1_radio_app.html#a074fa5e5e28868099e3ccdfee654fdb7">radio</a>.shutdown()</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+</div>
 </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="namespacemain-app.html#a0c57c4959f3780ceb182220303ee9d51">  247</a></span>    app = <a class="code hl_class" href="classmain-app_1_1_radio_app.html">RadioApp</a>()</div>
@@ -355,6 +355,7 @@ $(function(){initNavTree('main-app_8py_source.html','',''); });
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        print(<span class="stringliteral">&quot;Shutting down...&quot;</span>)</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        app.stop()</div>
 <div class="ttc" id="aclassmain-app_1_1_radio_app_html"><div class="ttname"><a href="classmain-app_1_1_radio_app.html">main-app.RadioApp</a></div><div class="ttdef"><b>Definition</b> <a href="#l00096">main-app.py:96</a></div></div>
+<div class="ttc" id="aclassmain-app_1_1_radio_app_html_a058e1b453b247b572e5cdfe50d1ac4fb"><div class="ttname"><a href="classmain-app_1_1_radio_app.html#a058e1b453b247b572e5cdfe50d1ac4fb">main-app.RadioApp.stop</a></div><div class="ttdeci">stop(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00237">main-app.py:237</a></div></div>
 <div class="ttc" id="aclassmain-app_1_1_radio_app_html_a05f9e9f8a677731fe16d7a294967310c"><div class="ttname"><a href="classmain-app_1_1_radio_app.html#a05f9e9f8a677731fe16d7a294967310c">main-app.RadioApp.last_btn_time</a></div><div class="ttdeci">int last_btn_time</div><div class="ttdef"><b>Definition</b> <a href="#l00129">main-app.py:129</a></div></div>
 <div class="ttc" id="aclassmain-app_1_1_radio_app_html_a074fa5e5e28868099e3ccdfee654fdb7"><div class="ttname"><a href="classmain-app_1_1_radio_app.html#a074fa5e5e28868099e3ccdfee654fdb7">main-app.RadioApp.radio</a></div><div class="ttdeci">radio</div><div class="ttdef"><b>Definition</b> <a href="#l00113">main-app.py:113</a></div></div>
 <div class="ttc" id="aclassmain-app_1_1_radio_app_html_a21bdf84cc9f511e4fc7f1d05188b3c32"><div class="ttname"><a href="classmain-app_1_1_radio_app.html#a21bdf84cc9f511e4fc7f1d05188b3c32">main-app.RadioApp.__init__</a></div><div class="ttdeci">__init__(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00097">main-app.py:97</a></div></div>
@@ -375,7 +376,6 @@ $(function(){initNavTree('main-app_8py_source.html','',''); });
 <div class="ttc" id="aclassrotary__encoder__driver_1_1_rotary_encoder_html"><div class="ttname"><a href="classrotary__encoder__driver_1_1_rotary_encoder.html">rotary_encoder_driver.RotaryEncoder</a></div><div class="ttdef"><b>Definition</b> <a href="rotary__encoder__driver_8py_source.html#l00004">rotary_encoder_driver.py:4</a></div></div>
 <div class="ttc" id="aclasssi4703__driver_1_1_si4703_html"><div class="ttname"><a href="classsi4703__driver_1_1_si4703.html">si4703_driver.Si4703</a></div><div class="ttdef"><b>Definition</b> <a href="si4703__driver_8py_source.html#l00004">si4703_driver.py:4</a></div></div>
 <div class="ttc" id="aclassssd1306__driver_1_1_s_s_d1306___s_p_i_html"><div class="ttname"><a href="classssd1306__driver_1_1_s_s_d1306___s_p_i.html">ssd1306_driver.SSD1306_SPI</a></div><div class="ttdef"><b>Definition</b> <a href="ssd1306__driver_8py_source.html#l00121">ssd1306_driver.py:121</a></div></div>
-<div class="ttc" id="anamespacemain-app_html_a36110fc1602a9c1f35b192ae728f5dc2"><div class="ttname"><a href="namespacemain-app.html#a36110fc1602a9c1f35b192ae728f5dc2">main-app.stop</a></div><div class="ttdeci">stop(self)</div><div class="ttdef"><b>Definition</b> <a href="#l00237">main-app.py:237</a></div></div>
 <div class="ttc" id="anamespacemain-app_html_a6a99ef6fccb4192c1e361ada715e65fa"><div class="ttname"><a href="namespacemain-app.html#a6a99ef6fccb4192c1e361ada715e65fa">main-app.draw_interface</a></div><div class="ttdeci">draw_interface(oled, freq, vol, rssi, is_stereo, mode, station, rds_text, scroll_x)</div><div class="ttdef"><b>Definition</b> <a href="#l00041">main-app.py:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -383,7 +383,7 @@ $(function(){initNavTree('main-app_8py_source.html','',''); });
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_1f112e2b88b4bdf525a7d74f74e969ef.html">de2-project-current</a></li><li class="navelem"><a href="main-app_8py.html">main-app.py</a></li>
+    <li class="navelem"><a href="dir_97dc248f304fb1dac9681c18cfb7f2a8.html">FM-radio-receiver-with-digital-tuning</a></li><li class="navelem"><a href="main-app_8py.html">main-app.py</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

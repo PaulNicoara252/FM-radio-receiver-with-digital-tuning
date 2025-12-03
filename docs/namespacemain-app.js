@@ -2,7 +2,6 @@ var namespacemain_app =
 [
     [ "RadioApp", "classmain-app_1_1_radio_app.html", "classmain-app_1_1_radio_app" ],
     [ "draw_interface", "namespacemain-app.html#a6a99ef6fccb4192c1e361ada715e65fa", null ],
-    [ "stop", "namespacemain-app.html#a36110fc1602a9c1f35b192ae728f5dc2", null ],
     [ "app", "namespacemain-app.html#a0c57c4959f3780ceb182220303ee9d51", null ],
     [ "DEFAULT_FREQ", "namespacemain-app.html#a600a86fa71e0631f1399ab89864306c0", null ],
     [ "DEFAULT_VOL", "namespacemain-app.html#a8236757fce499ed4ad892fceceeffa85", null ],

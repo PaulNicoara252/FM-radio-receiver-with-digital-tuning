@@ -6,5 +6,5 @@ var searchData=
   ['set_5fvolume_3',['set_volume',['../classsi4703__driver_1_1_si4703.html#a89675ca50184e369d3b5ae02f9f3837e',1,'si4703_driver::Si4703']]],
   ['show_4',['show',['../classssd1306__driver_1_1_s_s_d1306.html#a757116ac5fc5a6315d393caae8554dd9',1,'ssd1306_driver::SSD1306']]],
   ['shutdown_5',['shutdown',['../classsi4703__driver_1_1_si4703.html#a24af0e64a7083e811a69368ba2332e0e',1,'si4703_driver::Si4703']]],
-  ['stop_6',['stop',['../namespacemain-app.html#a36110fc1602a9c1f35b192ae728f5dc2',1,'main-app']]]
+  ['stop_6',['stop',['../classmain-app_1_1_radio_app.html#a058e1b453b247b572e5cdfe50d1ac4fb',1,'main-app::RadioApp']]]
 ];
