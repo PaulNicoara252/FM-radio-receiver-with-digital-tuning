@@ -154,7 +154,7 @@ https://github.com/user-attachments/assets/2bfd630c-2b35-4ec9-9f3d-a8fa236a6961
 The detailed schematic below represents the electrical connections and logic levels used in the project simulation (LTspice) and final assembly.
 
 <div align="center">
-  <img src="./docs/schematic.png" width="800" alt="LTspice Schematic">
+  <img src="./docs/Schematic.png" width="800" alt="LTspice Schematic">
 </div>
 
 
