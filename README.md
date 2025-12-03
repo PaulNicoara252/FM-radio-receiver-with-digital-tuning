@@ -130,21 +130,19 @@ A standard MicroPython driver adapted for high-speed SPI communication with the 
 
 ## 📷 V. Project Demo
 
-This section presents the visual representation of the project, showcasing the physical circuit assembly and the system in operation. Below you will find detailed photos of the breadboard connections, a video demonstration of the functionality, and the electrical schematic.
+This section presents the visual representation of the project, showcasing the physical circuit assembly and the system in operation. Below you will find detailed photos of the breadboard connections, a direct video demonstration, and the electrical schematic.
 
 ### 1. Physical Build
-Here is the actual implementation of the receiver. The images highlight the wiring complexity and the integration of the ESP32, Si4703, and OLED display on the breadboard.
+The images below highlight the wiring complexity and the integration of the ESP32, Si4703, and OLED display on the breadboard.
 
 | Wiring Detail (Top View) | System Setup (Side View) |
 | :---: | :---: |
-| <img src="./docs/WhatsApp Image 2025-12-03 at 23.47.26_c45a749a.jpg" width="400" alt="Wiring Detail"> | <img src="./docs/WhatsApp Image 2025-12-03 at 23.46.36_de1e6bef.jpg" width="400" alt="System Setup"> |
+| <img src="./docs/CircuitTopView.png" width="400" alt="Wiring Detail"> | <img src="./docs/CircuitSideView.png" width="400" alt="System Setup"> |
 
 ### 2. Video Demonstration
-Watch the system in action, including frequency tuning, volume control, and RDS scrolling.
+Click the link below to watch the system in action, demonstrating frequency tuning, volume control, and RDS scrolling directly from the repository.
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
-
-*(Click the image above to watch the video on YouTube)*
+### 🎬 [Click here to watch the Demo Video](./docs/FM_Radio_Receiver_Video.mp4)
 
 ### 3. Circuit Schematic
 The detailed schematic below represents the electrical connections and logic levels used in the project simulation (LTspice) and final assembly.
