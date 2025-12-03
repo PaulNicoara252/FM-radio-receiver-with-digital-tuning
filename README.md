@@ -158,5 +158,28 @@ The detailed schematic below represents the electrical connections and logic lev
 </div>
 
 
+## 📚 VI. Resources & References
+
+This project was built using the following documentation and tools. These resources are essential for understanding the low-level operation of the hardware and the software implementation.
+
+### 📄 Component Datasheets
+* **ESP32 Development Board:** [FireBeetle ESP32 User Manual](https://download.kamami.pl/p573315-FireBeetle%20Board-ESP32%20User%20Manual%20update.pdf)
+* **Si4703 FM Tuner:** [Silicon Labs Si4703 Datasheet](https://www.alldatasheet.com/html-pdf/201123/SILABS/SI4703/436/2/SI4703.html)
+* **SSD1306 OLED Display:** [Solomon Systech SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
+
+### 🛠️ Tools & Frameworks
+* **MicroPython:** [Official ESP32 Documentation](https://docs.micropython.org/en/latest/esp32/quickref.html) - Used for the firmware logic.
+* **Thonny IDE:** [Official Website](https://thonny.org/) - Used for writing code and flashing the ESP32.
+* **LTspice:** [Analog Devices Simulation](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html) - Used for circuit logic verification.
+
+### 🔗 Protocols & Concepts
+* **RDS (Radio Data System):** [Technical Overview](https://en.wikipedia.org/wiki/Radio_Data_System) - Information on Group 0A (Station Name) and Group 2A (Radio Text) structures.
+* **I2C Communication:** [I2C Info](https://i2c.info/) - Protocol used for the Si4703.
+* **SPI Communication:** [SPI Basics](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface) - Protocol used for the OLED display.
+
+---
+<div align="center">
+    <i>Project developed by [Your Name]</i>
+</div>
 
 
