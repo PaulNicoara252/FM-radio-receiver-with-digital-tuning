@@ -44,7 +44,7 @@ This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM
 <summary><b>📐 Click to view Logic Flowchart</b></summary>
 <br>
 
-![Project Flowchart](flowchart.svg)
+![Project Flowchart](./docs/flowchart.svg)
 
 </details>
 
@@ -60,6 +60,7 @@ This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM
 ├── rotary_encoder_driver.py  # Driver: Handling Rotary Encoder interrupts and debouncing
 ├── flowchart.svg             # Visual logic diagram
 └── README.md                 # Project Documentation
+```
 ### 🔌 Pinout & Wiring Strategy
 *Preliminary mapping (to be updated as hardware is assembled)*
 
