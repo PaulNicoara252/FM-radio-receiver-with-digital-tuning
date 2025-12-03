@@ -184,9 +184,9 @@ This project was built using the following documentation and tools. These resour
 ---
 <div align="center">
     <i>Project developed by:</i><br>
-    Baciu Petru Rareș<br>
-    Gyorfi Csaba Norbert<br>
-    Nicoară Paul Nicolae<br>
+    Petru Rareș Baciu<br>
+    Csaba Norbert Gyorfi<br>
+    Paul Nicolae Nicoară<br>
     Pleshyvtsev Maksym
 </div>
 
