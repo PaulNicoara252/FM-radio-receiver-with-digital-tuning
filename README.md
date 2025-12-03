@@ -61,6 +61,7 @@ This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM
 ├── flowchart.svg             # Visual logic diagram
 └── README.md                 # Project Documentation
 ```
+</details>
 ### 🔌 Pinout & Wiring Strategy
 *Preliminary mapping (to be updated as hardware is assembled)*
 
