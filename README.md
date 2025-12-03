@@ -167,6 +167,10 @@ This project was built using the following documentation and tools. These resour
 * **Si4703 FM Tuner:** [Silicon Labs Si4703 Datasheet](https://www.alldatasheet.com/html-pdf/201123/SILABS/SI4703/436/2/SI4703.html)
 * **SSD1306 OLED Display:** [Solomon Systech SSD1306 Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 
+### 💡 Code References & Tutorials
+* **Si4703 Driver Logic:** [GitHub - ryedwards/si4703RaspberryPi](https://github.com/ryedwards/si4703RaspberryPi/blob/master/si4703Library.py) - The Python/Raspberry Pi library used as a reference for porting the driver to MicroPython.
+* **OLED Integration:** [MicroPython SSD1306 Tutorial](https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html) - Official guide used for implementing the display driver and graphics.
+
 ### 🛠️ Tools & Frameworks
 * **MicroPython:** [Official ESP32 Documentation](https://docs.micropython.org/en/latest/esp32/quickref.html) - Used for the firmware logic.
 * **Thonny IDE:** [Official Website](https://thonny.org/) - Used for writing code and flashing the ESP32.
@@ -179,7 +183,10 @@ This project was built using the following documentation and tools. These resour
 
 ---
 <div align="center">
-    <i>Project developed by [Your Name]</i>
+    <i>Project developed by:</i><br>
+    Baciu Petru Rareș<br>
+    Gyorfi Csaba Norbert<br>
+    Nicoară Paul Nicolae<br>
+    Pleshyvtsev Maksym
 </div>
-
 
