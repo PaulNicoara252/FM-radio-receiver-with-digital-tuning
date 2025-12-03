@@ -234,14 +234,14 @@ class RadioApp:
                 force_redraw = False
             
             time.sleep_ms(10)
-def stop(self):
-    self.oled.fill(0)
-    self.oled.text("Powering off...", 20, 30)
-    self.oled.show()
-    time.sleep(1)
-    self.oled.poweroff()
-    self.radio.mute(True)
-    self.radio.shutdown()
+    def stop(self):
+        self.oled.fill(0)
+        self.oled.text("Powering off...", 20, 30)
+        self.oled.show()
+        time.sleep(1)
+        self.oled.poweroff()
+        self.radio.mute(True)
+        self.radio.shutdown()
 
 if __name__ == "__main__":
     app = RadioApp()

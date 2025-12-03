@@ -18,7 +18,7 @@ This project demonstrates concepts such as low-level device communication, bit-l
 <summary><h3>📐 Logic Flowchart</h3></summary>
 <br>
 
-![Project Flowchart](./docs/flowchart.svg)
+![Project Flowchart](./includes/flowchart.svg)
 
 </details>
 
@@ -67,18 +67,18 @@ The main system functions include:
 
 | Component & Description | Preview |
 | :--- | :---: |
-| **ESP32 Development Board**<br>The main microcontroller of the system. It runs MicroPython, communicates with all peripherals, handles the FM tuner, processes RDS data, updates the OLED display, and manages rotary encoder input. Provides I2C, SPI, and hardware interrupt support.<br>📄 [View Datasheet](https://download.kamami.pl/p573315-FireBeetle%20Board-ESP32%20User%20Manual%20update.pdf) | <img src="./docs/FirebeetleESP32.png" width="300" alt="ESP32 Board"> |
-| **Si4703 FM Tuner Module**<br>A dedicated FM receiver chip that demodulates audio and provides digital RDS data such as Program Service (station name) and Radio Text. It communicates via I2C and reports frequency, signal strength, and stereo/mono status.<br>📄 [View Datasheet](https://www.alldatasheet.com/html-pdf/201123/SILABS/SI4703/436/2/SI4703.html) | <img src="./docs/SI4703_module.png" width="300" alt="Si4703 Module"> |
-| **SSD1306 OLED Display (128×64)**<br>The graphical user interface of the device. It displays the tuned frequency, signal bars, stereo indicator, RDS text, and control mode. Driven through SPI for faster refresh rates and supports custom graphics.<br>📄 [View Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf) | <img src="./docs/OLED.png" width="300" alt="OLED Display"> |
-| **Rotary Encoder with Push-Button**<br>The main user input device. Rotation controls either frequency or volume, while the integrated push-button switches between modes. Rotation events are captured using hardware interrupts for precise and responsive control. | <img src="./docs/RotaryEncoder.png" width="300" alt="Rotary Encoder"> |
-| **Audio Output (Speakers)**<br>The Si4703 provides an analog audio output that can be fed directly into small speakers. The signal is already suitable for basic listening, and an external amplifier can optionally be added if higher volume is required. | <img src="./docs/Speaker.png" width="300" alt="Speakers"> |
+| **ESP32 Development Board**<br>The main microcontroller of the system. It runs MicroPython, communicates with all peripherals, handles the FM tuner, processes RDS data, updates the OLED display, and manages rotary encoder input. Provides I2C, SPI, and hardware interrupt support.<br>📄 [View Datasheet](https://download.kamami.pl/p573315-FireBeetle%20Board-ESP32%20User%20Manual%20update.pdf) | <img src="./includes/FirebeetleESP32.png" width="300" alt="ESP32 Board"> |
+| **Si4703 FM Tuner Module**<br>A dedicated FM receiver chip that demodulates audio and provides digital RDS data such as Program Service (station name) and Radio Text. It communicates via I2C and reports frequency, signal strength, and stereo/mono status.<br>📄 [View Datasheet](https://www.alldatasheet.com/html-pdf/201123/SILABS/SI4703/436/2/SI4703.html) | <img src="./includes/SI4703_module.png" width="300" alt="Si4703 Module"> |
+| **SSD1306 OLED Display (128×64)**<br>The graphical user interface of the device. It displays the tuned frequency, signal bars, stereo indicator, RDS text, and control mode. Driven through SPI for faster refresh rates and supports custom graphics.<br>📄 [View Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf) | <img src="./includes/OLED.png" width="300" alt="OLED Display"> |
+| **Rotary Encoder with Push-Button**<br>The main user input device. Rotation controls either frequency or volume, while the integrated push-button switches between modes. Rotation events are captured using hardware interrupts for precise and responsive control. | <img src="./includes/RotaryEncoder.png" width="300" alt="Rotary Encoder"> |
+| **Audio Output (Speakers)**<br>The Si4703 provides an analog audio output that can be fed directly into small speakers. The signal is already suitable for basic listening, and an external amplifier can optionally be added if higher volume is required. | <img src="./includes/Speaker.png" width="300" alt="Speakers"> |
 
 ### ↪︎ Block diagram
 
 The block diagram below illustrates the high-level data flow and control logic. The **ESP32** acts as the central controller, bridging the user input, visual feedback, and radio reception.
 
 <div align="center">
-  <img src="./docs/BlockDiagram.png" width="800" alt="System Block Diagram">
+  <img src="./includes/BlockDiagram.png" width="800" alt="System Block Diagram">
   <br>
 </div>
 
@@ -94,7 +94,7 @@ This section details the software architecture of the project. The code is desig
 <summary><h3>📐 File Structure </h3></summary>
 <br>
 
-![Project Filestructure](./docs/filestructure.svg)
+![Project Filestructure](./includes/filestructure.svg)
 
 </details>
 
@@ -136,11 +136,11 @@ This section presents the visual representation of the project, showcasing the p
 The images below highlight the wiring complexity and the integration of the ESP32, Si4703, and OLED display on the breadboard.
 
 <div align="center">
-  <img src="./docs/CircuitTopView.png" width="700" alt="Wiring Detail Top View">
+  <img src="./includes/CircuitTopView.png" width="700" alt="Wiring Detail Top View">
   <br>
   <i> Top view showing wiring connections</i>
   <br><br>
-  <img src="./docs/CircuitSideView.png" width="700" alt="System Setup Side View">
+  <img src="./includes/CircuitSideView.png" width="700" alt="System Setup Side View">
   <br>
   <i> Side view of the complete setup</i>
 </div>
@@ -154,7 +154,7 @@ https://github.com/user-attachments/assets/2bfd630c-2b35-4ec9-9f3d-a8fa236a6961
 The detailed schematic below represents the electrical connections and logic levels used in the project simulation (LTspice) and final assembly.
 
 <div align="center">
-  <img src="./docs/Schematic.png" width="800" alt="LTspice Schematic">
+  <img src="./includes/Schematic.png" width="800" alt="LTspice Schematic">
 </div>
 
 
