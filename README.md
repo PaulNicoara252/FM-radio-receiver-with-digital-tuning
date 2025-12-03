@@ -72,3 +72,14 @@ The main system functions include:
 | **SSD1306 OLED Display (128×64)**<br>The graphical user interface of the device. It displays the tuned frequency, signal bars, stereo indicator, RDS text, and control mode. Driven through SPI for faster refresh rates and supports custom graphics.<br>📄 [View Datasheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf) | <img src="./docs/OLED.png" width="300" alt="OLED Display"> |
 | **Rotary Encoder with Push-Button**<br>The main user input device. Rotation controls either frequency or volume, while the integrated push-button switches between modes. Rotation events are captured using hardware interrupts for precise and responsive control. | <img src="./docs/RotaryEncoder.png" width="300" alt="Rotary Encoder"> |
 | **Audio Output (Speakers)**<br>The Si4703 provides an analog audio output that can be fed directly into small speakers. The signal is already suitable for basic listening, and an external amplifier can optionally be added if higher volume is required. | <img src="./docs/Speaker.png" width="300" alt="Speakers"> |
+
+### ↪︎ Block diagram
+
+The block diagram below illustrates the high-level data flow and control logic. The **ESP32** acts as the central controller, bridging the user input, visual feedback, and radio reception.
+
+<div align="center">
+  <img src="./docs/BlockDiagram.png" width="800" alt="System Block Diagram">
+  <br>
+</div>
+
+<br>
