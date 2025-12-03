@@ -1,104 +1,15 @@
-<img width="643" height="432" alt="image" src="https://github.com/user-attachments/assets/3be7d62e-9f36-4a6e-8f5a-75862548479f" />
+# 📻 FM Radio Receiver - ESP32(MicroPython)
 
+![Language](https://img.shields.io/badge/language-MicroPython-007ACC?style=for-the-badge)
+![Hardware](https://img.shields.io/badge/Hardware-ESP32_|_Si4703_|_OLED-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge)
 
-# 📻 ESP32 Smart FM Receiver (MicroPython)
+## 📖 I. Overview
 
-![Language](https://img.shields.io/badge/language-MicroPython-blue)
-![Hardware](https://img.shields.io/badge/Hardware-ESP32%20%7C%20Si4703%20%7C%20OLED-orange)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+The **FM Radio Receiver** is a digitally controlled FM radio system built on the **ESP32** and developed entirely in **MicroPython**.
 
-> **Project Goal:** Design and implement a digital FM radio receiver with a graphical user interface, utilizing the Si4703 tuner's advanced capabilities (RDS) and the ESP32's processing power.
+* It integrates the **Si4703 FM tuner**, an **SSD1306 OLED display**, and a **rotary encoder** to provide a complete, modern, and intuitive radio interface.
+* The device supports precise **FM tuning** within the standard **87.5–108.0 MHz** band, real-time **RDS decoding** (station name and radio text), dynamic UI rendering, and responsive physical controls.
+* Communication between modules is handled through **I2C**, **SPI**, and **hardware interrupts**, ensuring reliable performance and efficient system operation.
 
-## 📖 Overview
-This project implements an FM radio receiver using an **ESP32**, the **Si4703 FM tuner module**, and a **1.3" SH1106-based OLED display**. The system is developed in **MicroPython** and follows a structured hardware–software integration approach, prioritizing modularity and ease of use.
-
-### Key Capabilities
-* **Digital Tuning:** Precise frequency control (87.5 - 108.0 MHz).
-* **Visual Feedback:** Real-time display of frequency, RSSI (Signal Strength), and Volume.
-* **User Interface:** Rotary encoder control (Tune/Volume) and OLED visualization.
-* **Architecture:** Shared I²C bus implementation for optimized pin usage.
-
----
-
-## 🛠 Hardware Specifications
-
-| Component | Model/Type | Description |
-| :--- | :--- | :--- |
-| **MCU** | ESP32 DevKit V1 | Main controller running MicroPython firmware. |
-| **Tuner** | Si4703 Breakout | FM Tuner with RDS support and digital volume control. |
-| **Display** | 1.3" OLED (I²C) | 128x64 pixel resolution, **SH1106** controller. |
-| **Input** | Rotary Encoder | KY-040 (or similar) for menu navigation and tuning. |
-<img width="643" height="432" alt="image" src="https://github.com/user-attachments/assets/3be7d62e-9f36-4a6e-8f5a-75862548479f" />
-
-# 📻 ESP32 Smart FM Receiver (MicroPython)
-
-![Language](https://img.shields.io/badge/language-MicroPython-blue)
-![Hardware](https://img.shields.io/badge/Hardware-ESP32%20%7C%20Si4703%20%7C%20OLED-orange)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-
-> **Project Goal:** Design and implement a digital FM radio receiver with a graphical user interface, utilizing the Si4703 tuner's advanced capabilities (RDS) and the ESP32's processing power.
-
----
-
-<details>
-<summary><b>📐 Click to view Logic Flowchart</b></summary>
-<br>
-
-![Project Flowchart](./docs/flowchart.svg)
-
-</details>
-
-<details>
-<summary><b>📂 Click to view Project File Structure</b></summary>
-<br>
-
-```text
-.
-├── main-app.py               # Main Entry Point: UI Logic, Hardware Init, and Event Loop
-├── si4703_driver.py          # Driver: Control for Si4703 FM Tuner (I2C)
-├── ssd1306_driver.py         # Driver: Control for OLED Display (SPI/I2C)
-├── rotary_encoder_driver.py  # Driver: Handling Rotary Encoder interrupts and debouncing
-├── flowchart.svg             # Visual logic diagram
-└── README.md                 # Project Documentation
-```
-</details>
-### 🔌 Pinout & Wiring Strategy
-*Preliminary mapping (to be updated as hardware is assembled)*
-
-| ESP32 Pin | Component | Function |
-| :--- | :--- | :--- |
-| GPIO 21 | Si4703 & OLED | **SDA** (I2C Data) |
-| GPIO 22 | Si4703 & OLED | **SCL** (I2C Clock) |
-| GPIO X | Si4703 | RST (Reset) |
-| GPIO Y | Rotary Encoder | CLK |
-| GPIO Z | Rotary Encoder | DT |
-
----
-
-## 🗺️ Project Roadmap & Progress
-*This section tracks the weekly development goals.*
-
-### Phase 1: Foundation 
-- [x] Project setup & Repository initialization.
-- [ ] Flash MicroPython firmware onto ESP32.
-- [ ] Validate I2C connection (I2C Scan) for OLED and Si4703.
-- [ ] Basic "Hello World" on SH1106 OLED.
-
-### Phase 2: Core Radio Drivers
-- [ ] Port/Write Si4703 MicroPython driver.
-- [ ] Implement basic register writing (Power Up, Volume).
-- [ ] Implement `seek()` and `tune()` functions.
-
-### Phase 3: Integration & UI
-- [ ] Design UI Layout (Frequency in center, Status bar on top).
-- [ ] Integrate Rotary Encoder interrupts.
-- [ ] **Milestone:** Working radio with sound and frequency display.
-
-### Phase 4: Advanced Features
-- [ ] Read and decode RDS (Station Name).
-- [ ] Save favorite stations to ESP32 non-volatile memory (`.json`).
-- [ ] Case design / Final assembly.
-
----
-
-## 📂 Project Structure
+This project demonstrates concepts such as low-level device communication, bit-level data decoding, graphical UI rendering, and event-driven input processing.
