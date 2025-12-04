@@ -89,7 +89,7 @@ The block diagram below illustrates the high-level data flow and control logic. 
 ## 💻 IV. SOFTWARE
 
 This section details the software architecture of the project. The code is designed with a modular approach, where dedicated drivers handle hardware peripherals (Radio, Display, Input), while a central application loop coordinates logic, UI updates, and data processing in real-time.
-
+[Documentation](https://paulnicoara252.github.io/FM-radio-receiver-with-digital-tuning)
 <details>
 <summary><h3>📐 File Structure </h3></summary>
 <br>
