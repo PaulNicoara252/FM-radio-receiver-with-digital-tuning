@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/language-MicroPython-007ACC?style=for-the-badge)
 ![Hardware](https://img.shields.io/badge/Hardware-ESP32_|_Si4703_|_OLED-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Finished-green?style=for-the-badge)
 
 ## 📖 I. Overview
 
